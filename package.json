@@ -1,0 +1,42 @@
+{
+  "name": "react-video-analyzer-widgets",
+  "version": "0.1.1",
+  "description": "React wrapper for Azure Video Analyzer widgets",
+  "author": "Jingun Jung",
+  "keywords": [
+    "wedx",
+    "azure",
+    "iot",
+    "edge"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/motoJinC25/react-video-analyzer-widgets.git"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0 || ^17.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0 || ^17.0.0"
+  },
+  "dependencies": {
+    "core-js": "3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
