@@ -1,6 +1,6 @@
 {
   "name": "react-video-analyzer-widgets",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "React wrapper for Azure Video Analyzer widgets",
   "author": "Jingun Jung",
   "keywords": [

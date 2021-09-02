@@ -29,6 +29,7 @@ const AVAPlayer = (props) => {
   useEffect(() => {
     const widgetRoot = document.getElementById(AVA_PLAYER_ID);
     const avaPlayerTag = document.createElement(AVA_PLAYER_TAG);
+    avaPlayerTag.setAttribute('width', '100%');
     widgetRoot.appendChild(avaPlayerTag);
     setVideo();
 
@@ -56,7 +57,7 @@ const AVAPlayer = (props) => {
   }, []);
 
   return (
-    <div id={AVA_PLAYER_ID}></div>
+    <div id={AVA_PLAYER_ID} style={{margin:'auto', maxWidth:props.maxWidth, width:props.width}} />
   );
 };
 
